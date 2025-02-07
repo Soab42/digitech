@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Here is the conversation in a Markdown structure:
 
-## Getting Started
+# **Task Description**
 
-First, run the development server:
+We have formed a team to work with you and assigned a task to move forward. We want to organize our group work in a more beautiful way. We need your help in this regard. We hope that you will contribute to making our journey easier.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **Task Requirements**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. You have to create a portfolio website for our organization. This portfolio will not be personal, it will be for the organization.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. You have to create your own UI. We want to know who has a good design sense among us. We need a UI designer for our real-life work.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. You can show your creativity in this portfolio as much as you want. We need creative people for our real-life work.
 
-## Learn More
+## **Task Details**
 
-To learn more about Next.js, take a look at the following resources:
+i. We are providing a UI design example, you can create it in this way or create it in your own way.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Home Page: <https://infolio1.themescamp.com/original/?mode=dark>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- About Page: <https://infolio1.themescamp.com/inner-pages/>
+- Team Page: <https://infolio1.themescamp.com/inner-pages/team/>
+- Portfolio Page: <https://infolio1.themescamp.com/inner-pages/portfolio-standard/>
+- Blog Page: <https://infolio1.themescamp.com/inner-pages/blog-classic/>
+- Contact Page: <https://infolio1.themescamp.com/inner-pages/contact3/>
+- Service Page: <https://infolio1.themescamp.com/inner-pages/services/>
+- Service Details Page: <https://infolio1.themescamp.com/inner-pages/services-single/>
+- FAQ Page: <https://infolio1.themescamp.com/inner-pages/faqs/>
 
-## Deploy on Vercel
+ii. This task project will have two parts, one is the main part and the other is the admin part. We have chosen a UI for the admin part, you can use it or create it in your own way.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Dashboard Page: <https://ecme-react.themenate.net/dashboards/ecommerce>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+iii. This task will be fully dynamic. The admin will be able to create, update, and delete everything from the dashboard.
+
+iv. You have to implement authentication so that each person can update their own information. One person will not be able to change another person's information.
+
+v. The contact form should work properly. If someone submits their details, it should be sent to the portfolio owner's email.
+
+vi. You can store all files in Cloudinary or Firebase.
+
+vii. We are not telling you everything, you have to use your common sense to understand.
+
+## **Backend Options**
+
+You can use any of the following backend options:
+
+- Python Django
+- PHP Laravel
+- Nest.js
+- Express.js
+- Wordpress API
+- Next.js
+
+## **Database Options**
+
+You can use any of the following database options:
+
+- Firebase
+- Supabase
+- MongoDB
+- MySQL
+- PostgreSQL
+
+## **Frontend Options**
+
+You can use any of the following frontend options:
+
+- React.js
+- Next.js
+# digitech
