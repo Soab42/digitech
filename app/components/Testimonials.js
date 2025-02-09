@@ -23,23 +23,23 @@ const context = [
   },
 ];
 
-const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const TestimonialsSection = () => {
+  const [testimonialIndex, setTestimonialIndex] = useState(0);
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
+  const handlePreviousTestimonial = () => {
+    setTestimonialIndex((prevIndex) =>
       prevIndex === 0 ? context.length - 1 : prevIndex - 1
     );
   };
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
+  const handleNextTestimonial = () => {
+    setTestimonialIndex((prevIndex) =>
       prevIndex === context.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   return (
-    <div className="flex justify-between max-w-7xl mx-auto relative">
+    <div className="flex justify-between max-w-7xl mx-auto relative mt-20">
       <div className="absolute top-28 -left-60 rotate-3 opacity-20 w-96 overflow-clip">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -49,28 +49,31 @@ const Testimonials = () => {
           <path
             stroke="white"
             d="M-43 773.821C160.86 662.526 451.312 637.01 610.111 733.104C768.91 829.197 932.595 1062.9 602.782 1098.75C272.969 1134.6 676.888 25.4306 1852 1"
-            style={{ strokeDasharray: "346.53, 0" }} // stroke-dasharray: 3246.53, 0"
+            style={{ strokeDasharray: "346.53, 0" }}
             strokeWidth={2}
-          ></path>
+          />
         </svg>
       </div>
       <div className="w-1/2">
         <p className="uppercase text-teal-600">Testimonials</p>
         <h1 className="text-4xl">What people say?</h1>
       </div>
-      <div className="flex items-center pl-20 ">
-        <TestimonialCard {...context[currentIndex]} key={currentIndex} />
+      <div className="flex items-center pl-20">
+        <TestimonialCard
+          {...context[testimonialIndex]}
+          key={testimonialIndex}
+        />
       </div>
       <div className="flex gap-3 items-center absolute bottom-10 right-0">
         <button
           className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center"
-          onClick={handlePrev}
+          onClick={handlePreviousTestimonial}
         >
           <ChevronLeft />
         </button>
         <button
           className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center"
-          onClick={handleNext}
+          onClick={handleNextTestimonial}
         >
           <ChevronRight />
         </button>
@@ -79,7 +82,7 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default TestimonialsSection;
 
 const TestimonialCard = ({ name, title, image, testimonial }) => {
   const cardRef = useRef(null);

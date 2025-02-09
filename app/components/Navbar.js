@@ -8,45 +8,12 @@ import { useState } from "react";
 import { Iceland } from "next/font/google";
 import Search from "./Search";
 import Logo from "./Logo";
+import { menuItems } from "../db";
 // Iceland;
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState("");
 
-  const menuItems = [
-    {
-      title: "Home",
-      path: "/",
-    },
-    {
-      title: "About",
-      path: "/about",
-    },
-    {
-      title: "Services",
-      path: "/services",
-      dropdown: [
-        { title: "Our Services", path: "/services" },
-        { title: "Service Details", path: "/services/details" },
-      ],
-    },
-    {
-      title: "Portfolio",
-      path: "/portfolio",
-    },
-    {
-      title: "Team",
-      path: "/team",
-    },
-    {
-      title: "Blog",
-      path: "/blog",
-    },
-    {
-      title: "Contact",
-      path: "/contact",
-    },
-  ];
   return (
     <nav className="bg-transparent shadow-md fixed top-0 left-0 right-0 backdrop-blur-sm z-50">
       <div className="max-w-7xl mx-auto px-4">
