@@ -2,7 +2,7 @@ import Link from "next/link";
 import ContactForm from "../components/ContactForm";
 import { contactInfo, socialLinks } from "../components/Footer";
 import TitleWithBg from "../components/Title";
-import DarkModeMap from "../components/Map";
+// import DarkModeMap from "../components/Map";
 
 export default function ContactPage() {
   return (
@@ -41,7 +41,7 @@ export default function ContactPage() {
         </div>
         <ContactForm />
       </div>
-      <DarkModeMap />
+      {/* <DarkModeMap /> */}
       <div className="w-full h-[50vh] mt-28 ">
         <iframe
           width="100%"
